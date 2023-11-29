@@ -1,0 +1,12 @@
+###########################################################################
+
+problem :
+    i get this error :
+    connection to server at "ip", port 5432 failed: FATAL remainning connection slots are reserved for non-replication superuser connection
+
+how i solved ?
+    i use this command for see default value of max connection in GCP cloud postgres 
+
+    SELECT name, setting FROM pg_setting WHERE name = 'max_connections';
+
+    then i use this comm    

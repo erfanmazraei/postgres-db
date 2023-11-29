@@ -1,0 +1,2 @@
+change jira domain has problem with description , you must execute this command for change domain in jiraissue table:
+    UPDATE jiraissue SET description = replace(description, 'jira.scratnet.com', 'issues.scratnet.com' ) WHERE description LiKE '%jira.scratnet.com%'
